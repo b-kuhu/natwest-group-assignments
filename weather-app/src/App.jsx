@@ -3,7 +3,6 @@ import searchIcon from "./assets/search-icon.png";
 import cloudIcon from "./assets/cloudy.png";
 import windIcon from "./assets/wind.png";
 import humidyIcon from "./assets/humidity.png";
-import API_KEY1 from '.env';
 import React, { useState } from "react";
 
 import BarChart from "./BarChart";
@@ -17,7 +16,7 @@ const App = () => {
   const fetchData = async () => {
     setError(null);
     try {
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${API_KEY1}`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=02be204ad5ab93e03ae60dce10a95c5f`;
       const response = await fetch(url);
 
       // Check if the response is successful

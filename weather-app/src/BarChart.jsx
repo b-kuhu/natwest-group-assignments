@@ -7,8 +7,7 @@ import {
     Tooltip,
     Legend,
   } from 'chart.js';
-import API_KEY2 from '.env';
-  import { useEffect,useState } from 'react';
+import { useEffect,useState } from 'react';
 
 import {Bar} from 'react-chartjs-2';
 ChartJS.register(
@@ -125,7 +124,7 @@ const BarChart = ({cityName}) =>{
     )
     useEffect(()=>{
         const fetchData = async() =>{
-            const url =`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${cityName}/2024-02-04/2024-02-11?unitGroup=us&include=days&key=${API_KEY2}&contentType=json`
+            const url =`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${cityName}/2024-02-04/2024-02-11?unitGroup=us&include=days&key=TH7AU4PSXX96HQXD5GRY3SMZF&contentType=json`
             const labelSet = [];
             const dataSet1 = [];
             const dataSet2 = [];
